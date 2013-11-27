@@ -1,0 +1,13 @@
+!!!
+%html
+  %head
+    %title Cursoruby
+    = stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true
+    = javascript_include_tag "application", "data-turbolinks-track" => true
+    = csrf_meta_tags
+  %body
+    .hero-unit
+      %h1 Bienvenido al curso de Ruby... y Rails
+      %p Conquista mujeres/hombres con este asombroso lenguaje
+    .container
+      %p= yield
